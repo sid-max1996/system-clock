@@ -1,6 +1,6 @@
 {
   "name": "system-clock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "set system time, date and zone in os Windows",
   "repository": "https://github.com/sid-max1996/system-clock.git",
   "main": "index.js",

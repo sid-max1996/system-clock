@@ -60,9 +60,9 @@ Napi::Object system_clock::Init(Napi::Env env, Napi::Object exports)
     "setDateAndTime", Napi::Function::New(env, system_clock::setDateAndTime)
   );
 
-  exports.Set(
-    "setTimeZone", Napi::Function::New(env, system_clock::setTimeZone)
-  );
+  // exports.Set(
+  //   "setTimeZone", Napi::Function::New(env, system_clock::setTimeZone)
+  // );
 
   return exports;
 }
