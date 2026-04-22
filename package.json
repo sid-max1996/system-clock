@@ -1,13 +1,13 @@
 {
   "name": "system-clock",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "set system time, date and zone in os Windows",
   "repository": "https://github.com/sid-max1996/system-clock.git",
   "main": "index.js",
   "gypfile": true,
   "scripts": {
     "install": "node-gyp-build",
-    "prebuild": "prebuildify --napi",
+    "prebuild": "prebuildify --napi --arch x64 && prebuildify --napi --arch ia32 --target 18.20.0",
     "build": "node-gyp rebuild",
     "clean": "node-gyp clean"
   },
